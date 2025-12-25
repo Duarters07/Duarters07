@@ -5,7 +5,7 @@ Coding powered by coffee☕
 
 
 
-I am currently studying Computer Engineering and Informatics at the University of Aveiro.
+I am currently studying Informatics Engineering at the University of Aveiro.
 * 🌍  I'm based in Entroncamento
 * ✉️  You can contact me at [duartesantos@ua.pt](mailto:duartesantos@ua.pt)
 * ⚡  Coding like Miguel Oliveira 88 races!!!
