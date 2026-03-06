@@ -1,4 +1,4 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Duarte Santos
+About me 👋
 =====================================================================================================================================
 
 <img src='./banner.gif' align='center' width='900' height='200'/>
@@ -8,9 +8,11 @@ Coding powered by coffee☕
 
 
 I am currently studying Informatics Engineering at the University of Aveiro.
-* 🌍  I'm based in Entroncamento
-* ✉️  You can contact me at [duartesantos@ua.pt](mailto:duartesantos@ua.pt)
-
+* 🌍  I'm based in Entroncamento;
+* ✉️  You can contact me at:
+  * Academic: [duartesantos@ua.pt](mailto:duartesantos@ua.pt)
+  * Personal: [duarterainho@gmail.com](mailto:duarterainho@gmail.com)
+* 🎓 With a focus on cybersecurity.
 
 ---
 ## Languages and Tools
