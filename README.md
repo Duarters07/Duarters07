@@ -23,10 +23,12 @@ duarte@ua:~$ ls ~/projects --sort=impact
 ```
 
 <p align="center">
-  <a href="https://github.com/Duarters07/SIEMgen-class"><img src="assets/siemgen-class.svg" width="49%" alt="SIEMgen-class" /></a>
+  <a href="https://github.com/Duarters07/MicroRato24"><img src="assets/microrato24.svg" width="49%" alt="MicroRato24" /></a>
   <a href="https://github.com/Duarters07/MinimalSIEM"><img src="assets/minimalsiem.svg" width="49%" alt="MinimalSIEM" /></a>
   <a href="https://github.com/Duarters07/stack-enterprise-network-lab"><img src="assets/network-lab.svg" width="49%" alt="Enterprise network lab" /></a>
   <a href="https://github.com/Duarters07/fpga-thermostat"><img src="assets/fpga-thermostat.svg" width="49%" alt="FPGA thermostat" /></a>
+  <a href="https://github.com/Duarters07/.dotfiles"><img src="assets/dotfiles.svg" width="49%" alt=".dotfiles" /></a>
+  <a href="https://github.com/Duarters07/UA-LECI"><img src="assets/ua-leci.svg" width="49%" alt="UA-LECI" /></a>
 </p>
 
 ```console
