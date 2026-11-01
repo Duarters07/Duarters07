@@ -97,8 +97,8 @@ def render(s):
         ("commits", str(s["commits"])),
         ("pull requests", str(s["prs"])),
         ("issues", str(s["issues"])),
-        ("public repos", f'{s["repos"]} · {s["stars"]} ★'),
-        ("streak", f"{current} day{'s' * (current != 1)} · best {best}"),
+        ("public repos", f'{s["repos"]} | {s["stars"]} ★'),
+        ("streak", f"{current} day{'s' * (current != 1)} | best {best}"),
     ]
     left = [
         f'<text x="24" y="{92 + i * 21}"><tspan class="k">{k}</tspan>'
@@ -150,14 +150,14 @@ def render(s):
 <path d="M0.5 10.5a10 10 0 0 1 10-10h{W - 21}a10 10 0 0 1 10 10v20h-{W - 1}z" fill="#161b22"/>
 <line x1="0.5" y1="30.5" x2="{W - 0.5}" y2="30.5" stroke="#30363d"/>
 <circle cx="18" cy="15.5" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15.5" r="5.5" fill="#febc2e"/><circle cx="54" cy="15.5" r="5.5" fill="#28c840"/>
-<text x="{W / 2}" y="19.5" class="bar" text-anchor="middle">~ — neofetch --github</text>
+<text x="{W / 2}" y="19.5" class="bar" text-anchor="middle">neofetch --github</text>
 <text x="24" y="60"><tspan class="h">{escape(s["login"])}</tspan><tspan class="k">@github</tspan></text>
 <line x1="24" y1="70" x2="420" y2="70" stroke="#30363d" stroke-dasharray="3 3"/>
 <g class="fade">{"".join(left)}</g>
 <line x1="446" y1="48" x2="446" y2="208" stroke="#30363d"/>
 <text x="{bx}" y="60" class="k">languages</text>
 <g class="fade">{"".join(bar)}{"".join(legend)}</g>
-<text x="{bx}" y="160" class="k">activity · 52 weeks</text>
+<text x="{bx}" y="160" class="k">activity - 52 weeks</text>
 <g class="fade">{"".join(spark)}</g>
 <text x="{W - 24}" y="{H - 8}" class="bar" text-anchor="end" font-size="10">updated {date.today().isoformat()}</text>
 </svg>

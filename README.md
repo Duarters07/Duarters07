@@ -1,25 +1,35 @@
+About me 👋
+=====================================================================================================================================
+
+<img src='./banner.gif' align='center' width='900' height='200'/>
+
+Coding powered by coffee☕
+-------------------------
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=39D353&center=true&vCenter=true&width=640&lines=%24+whoami;Duarte+Santos+%E2%80%94+MSc+Informatics+Engineering;Blue+team+%7C+SIEM+%7C+Detection+%26+Monitoring;Networks+%E2%80%A2+Linux+%E2%80%A2+Infrastructure" alt="whoami" />
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=39D353&center=true&vCenter=true&width=640&lines=%24+whoami;Duarte+Santos+-+MSc+Informatics+Engineering;Blue+team+%7C+SIEM+%7C+Detection+%26+Monitoring;Networks+%7C+Linux+%7C+Infrastructure" alt="whoami" />
 
 <a href="https://www.linkedin.com/in/O-TEU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:duartesantos@ua.pt"><img src="https://img.shields.io/badge/Email-duartesantos@ua.pt-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+<a href="mailto:duartesantos@ua.pt"><img src="https://img.shields.io/badge/Work-duartesantos@ua.pt-0099CC?style=flat-square&logo=minutemailer&logoColor=white" /></a>
+<a href="mailto:duarterainho@gmail.com"><img src="https://img.shields.io/badge/Personal-duarterainho@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Universidade_de_Aveiro-DETI-0099CC?style=flat-square" />
 <img src="https://img.shields.io/badge/Entroncamento-Portugal-2ea44f?style=flat-square" />
 
 </div>
 
 ```console
-duarte@ua:~$ cat about.txt
+duarte@santos:~$ cat about.txt
   role      MSc student, Informatics Engineering @ Universidade de Aveiro
-  focus     cybersecurity — security monitoring, SIEM, log pipelines, network security
+  focus     cybersecurity - security monitoring, SIEM, log pipelines, network security
   building  hands-on labs that other students actually use in class
-  daily     Arch Linux · Neovim · Docker · too much coffee ☕
+  daily     Arch Linux | Neovim | Docker | too much coffee ☕
   open to   internships / summer programmes in SOC, blue team or security engineering
 ```
 
 ```console
-duarte@ua:~$ ls ~/projects --sort=impact
+duarte@santos:~$ ls ~/projects --sort=impact
 ```
 
 <p align="center">
@@ -32,7 +42,7 @@ duarte@ua:~$ ls ~/projects --sort=impact
 </p>
 
 ```console
-duarte@ua:~$ which --all tools
+duarte@santos:~$ which --all tools
 ```
 
 <p align="center">
@@ -42,7 +52,7 @@ duarte@ua:~$ which --all tools
 
 <!-- Descomenta quando tiveres perfil em plataformas de CTF/treino:
 ```console
-duarte@ua:~$ cat ~/.ctf/ranks
+duarte@santos:~$ cat ~/.ctf/ranks
 ```
 <p align="center">
   <a href="https://tryhackme.com/p/O-TEU-USER"><img src="https://tryhackme-badges.s3.amazonaws.com/O-TEU-USER.png" /></a>
@@ -50,7 +60,7 @@ duarte@ua:~$ cat ~/.ctf/ranks
 -->
 
 ```console
-duarte@ua:~$ neofetch --github
+duarte@santos:~$ neofetch --github
 ```
 
 <p align="center">

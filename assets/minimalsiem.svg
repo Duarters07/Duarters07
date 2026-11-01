@@ -18,12 +18,12 @@
 <circle cx="18" cy="15.5" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15.5" r="5.5" fill="#febc2e"/><circle cx="54" cy="15.5" r="5.5" fill="#28c840"/>
 <text x="220.0" y="19.5" class="bar" text-anchor="middle">~/projects/MinimalSIEM</text>
 <rect x="436" y="44" width="2" height="150" rx="1" fill="#58a6ff" opacity=".6"/>
-<text x="20" y="62" class="t r" style="animation-delay:0.2s"><tspan class="p">duarte@ua</tspan><tspan class="d">:~$</tspan> docker compose up -d</text>
+<text x="20" y="62" class="t r" style="animation-delay:0.2s"><tspan class="p">duarte@santos</tspan><tspan class="d">:~$</tspan> docker compose up -d</text>
 <text x="20" y="88" class="h r" style="animation-delay:0.6s">A SIEM small enough to run in class.</text>
 <text x="20" y="110" class="d r" style="animation-delay:0.9s">TLS-secured Elastic stack in one compose:</text>
 <text x="20" y="128" class="d r" style="animation-delay:1.2s">Filebeat → Elasticsearch → Kibana.</text>
 <text x="20" y="146" class="d r" style="animation-delay:1.6s">Plug SIEMgen in and start hunting.</text>
-<text x="20" y="176" class="t r" style="animation-delay:2.0s"><tspan class="ok">[  OK  ]</tspan> es01 healthy · kibana healthy <tspan class="cur">█</tspan></text>
+<text x="20" y="176" class="t r" style="animation-delay:2.0s"><tspan class="ok">[  OK  ]</tspan> es01 healthy | kibana healthy <tspan class="cur">█</tspan></text>
 <g class="r" style="animation-delay:2.3s"><rect x="20" y="190" width="103" height="18" rx="9" class="tag"/><text x="71.6" y="203" class="tt" text-anchor="middle">elasticsearch</text></g>
 <g class="r" style="animation-delay:2.3s"><rect x="131.10000000000002" y="190" width="56" height="18" rx="9" class="tag"/><text x="159.2" y="203" class="tt" text-anchor="middle">kibana</text></g>
 <g class="r" style="animation-delay:2.3s"><rect x="195.3" y="190" width="70" height="18" rx="9" class="tag"/><text x="230.1" y="203" class="tt" text-anchor="middle">filebeat</text></g>

@@ -18,12 +18,12 @@
 <circle cx="18" cy="15.5" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15.5" r="5.5" fill="#febc2e"/><circle cx="54" cy="15.5" r="5.5" fill="#28c840"/>
 <text x="220.0" y="19.5" class="bar" text-anchor="middle">~/projects/MicroRato24</text>
 <rect x="436" y="44" width="2" height="150" rx="1" fill="#ff7b72" opacity=".6"/>
-<text x="20" y="62" class="t r" style="animation-delay:0.2s"><tspan class="p">duarte@ua</tspan><tspan class="d">:~$</tspan> pcompile main.c map.c mr32.c</text>
+<text x="20" y="62" class="t r" style="animation-delay:0.2s"><tspan class="p">duarte@santos</tspan><tspan class="d">:~$</tspan> pcompile main.c map.c mr32.c</text>
 <text x="20" y="88" class="h r" style="animation-delay:0.6s">A maze-solving robot that learns.</text>
 <text x="20" y="110" class="d r" style="animation-delay:0.9s">PIC32 line-follower for UA&#x27;s MicroRato:</text>
 <text x="20" y="128" class="d r" style="animation-delay:1.2s">maps the maze on the first run, prunes</text>
 <text x="20" y="146" class="d r" style="animation-delay:1.6s">dead ends, then races the shortest path.</text>
-<text x="20" y="176" class="t r" style="animation-delay:2.0s"><tspan class="ok">[  OK  ]</tspan> path LBR → B · shortest route locked <tspan class="cur">█</tspan></text>
+<text x="20" y="176" class="t r" style="animation-delay:2.0s"><tspan class="ok">[  OK  ]</tspan> path LBR → B | shortest route locked <tspan class="cur">█</tspan></text>
 <g class="r" style="animation-delay:2.3s"><rect x="20" y="190" width="23" height="18" rx="9" class="tag"/><text x="31.4" y="203" class="tt" text-anchor="middle">c</text></g>
 <g class="r" style="animation-delay:2.3s"><rect x="50.7" y="190" width="50" height="18" rx="9" class="tag"/><text x="75.5" y="203" class="tt" text-anchor="middle">pic32</text></g>
 <g class="r" style="animation-delay:2.3s"><rect x="108.2" y="190" width="70" height="18" rx="9" class="tag"/><text x="143.0" y="203" class="tt" text-anchor="middle">robotics</text></g>
