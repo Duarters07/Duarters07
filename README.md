@@ -50,11 +50,11 @@ duarte@ua:~$ cat ~/.ctf/ranks
 -->
 
 ```console
-duarte@ua:~$ git log --all --since="1 year ago" | render --3d
+duarte@ua:~$ neofetch --github
 ```
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-green.svg" alt="3D contribution graph" />
+  <img src="assets/stats.svg" width="98%" alt="GitHub stats" />
 </p>
 
 <p align="center">

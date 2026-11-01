@@ -6,7 +6,9 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/profile-stats.yml"]
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - ".github/scripts/stats.py"
 
 permissions:
   contents: write
@@ -17,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: 3D contribution graph
-        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+      - name: Stats card
+        run: python3 .github/scripts/stats.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -35,7 +37,11 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -A profile-3d-contrib dist
-          if git commit -m "chore: update profile stats"; then
-            git push
+          git add -A assets/stats.svg dist
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
           fi
+          git commit -m "chore: update profile stats"
+          git pull --rebase origin main
+          git push origin HEAD:main
