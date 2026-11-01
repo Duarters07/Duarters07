@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="250" viewBox="0 0 440 250" role="img" aria-label="BSc LECI | final project | 2025">
+<style>
+  text { font-family: ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; font-size: 12.5px; fill: #c9d1d9; }
+  .h { fill: #f0f6fc; font-weight: 700; font-size: 13.5px; }
+  .d { fill: #8b949e; }
+  .p { fill: #39d353; font-weight: 700; }
+  .bar { fill: #8b949e; font-size: 11.5px; }
+  .tag { fill: #39d353; fill-opacity: .14; stroke: #39d353; stroke-opacity: .5; }
+  .tt { fill: #39d353; font-size: 11px; }
+  .cur { fill: #39d353; animation: blink 1s step-end infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .n { opacity: 0; animation: cd 5s steps(1) infinite; }
+  @keyframes cd { 0% { opacity: 1; } 20%, 100% { opacity: 0; } }
+</style>
+<rect x="0.5" y="0.5" width="439" height="249" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 10.5a10 10 0 0 1 10-10h419a10 10 0 0 1 10 10v20h-439z" fill="#161b22"/>
+<line x1="0.5" y1="30.5" x2="439.5" y2="30.5" stroke="#30363d"/>
+<circle cx="18" cy="15.5" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15.5" r="5.5" fill="#febc2e"/><circle cx="54" cy="15.5" r="5.5" fill="#28c840"/>
+<text x="220.0" y="19.5" class="bar" text-anchor="middle">BSc LECI | final project | 2025</text>
+
+<text x="220.0" y="52" class="d" text-anchor="middle" font-size="11">GNU GRUB  version 2.12  |  /dev/sdb1</text>
+<rect x="20.5" y="62.5" width="399" height="74" fill="none" stroke="#30363d"/>
+<rect x="24" y="68" width="392" height="20" fill="#39d353"/>
+<text x="32" y="82" fill="#0d1117" font-weight="700" style="fill:#0d1117">*PIE Live - exam mode</text>
+<text x="32" y="106" class="d">Safe Exam Browser</text>
+<text x="408" y="106" class="d" text-anchor="end" font-size="11">known vulns</text>
+<text x="32" y="127" class="d" text-decoration="line-through">Windows 11 - cheatsheet.pdf</text>
+<text x="408" y="127" text-anchor="end" font-size="11" style="fill:#ff7b72">[blocked]</text>
+<text x="20" y="156" class="d n" font-size="11" style="animation-delay:0s;opacity:1">Booting PIE automatically in <tspan class="p">5</tspan>s</text><text x="20" y="156" class="d n" font-size="11" style="animation-delay:1s">Booting PIE automatically in <tspan class="p">4</tspan>s</text><text x="20" y="156" class="d n" font-size="11" style="animation-delay:2s">Booting PIE automatically in <tspan class="p">3</tspan>s</text><text x="20" y="156" class="d n" font-size="11" style="animation-delay:3s">Booting PIE automatically in <tspan class="p">2</tspan>s</text><text x="20" y="156" class="d n" font-size="11" style="animation-delay:4s">Booting PIE automatically in <tspan class="p">1</tspan>s</text>
+<text x="20" y="180" class="h">Portable Isolated Environment</text>
+<text x="20" y="198" class="d">Plug-and-play USB that turns any laptop into</text>
+<text x="20" y="214" class="d">a locked-down exam machine. BSc final project.</text>
+<rect x="20" y="224" width="90" height="18" rx="9" class="tag"/><text x="64.8" y="237" class="tt" text-anchor="middle">debian-live</text><rect x="117.7" y="224" width="76" height="18" rx="9" class="tag"/><text x="155.9" y="237" class="tt" text-anchor="middle">mitmproxy</text><rect x="202.0" y="224" width="56" height="18" rx="9" class="tag"/><text x="230.1" y="237" class="tt" text-anchor="middle">python</text><rect x="266.2" y="224" width="63" height="18" rx="9" class="tag"/><text x="297.6" y="237" class="tt" text-anchor="middle">flutter</text>
+
+</svg>
