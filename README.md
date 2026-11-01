@@ -1,55 +1,65 @@
-About me 👋
-=====================================================================================================================================
+<div align="center">
 
-<img src='./banner.gif' align='center' width='900' height='200'/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=39D353&center=true&vCenter=true&width=640&lines=%24+whoami;Duarte+Santos+%E2%80%94+MSc+Informatics+Engineering;Blue+team+%7C+SIEM+%7C+Detection+%26+Monitoring;Networks+%E2%80%A2+Linux+%E2%80%A2+Infrastructure" alt="whoami" />
 
-Coding powered by coffee☕
--------------------------
+<a href="https://www.linkedin.com/in/O-TEU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:duartesantos@ua.pt"><img src="https://img.shields.io/badge/Email-duartesantos@ua.pt-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/Universidade_de_Aveiro-DETI-0099CC?style=flat-square" />
+<img src="https://img.shields.io/badge/Entroncamento-Portugal-2ea44f?style=flat-square" />
 
-
-I am currently studying Informatics Engineering at the University of Aveiro.
-* 🌍  I'm based in Entroncamento;
-* ✉️  You can contact me at:
-  * Academic: [duartesantos@ua.pt](mailto:duartesantos@ua.pt)
-  * Personal: [duarterainho@gmail.com](mailto:duarterainho@gmail.com)
-* 🎓 With a focus on cybersecurity.
-
----
-## Languages and Tools
-
-<br>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=arch,linux,windows,raspberrypi,kali" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=vscode,vim,neovim,arduino" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=ansible,docker,bash,elasticsearch,terraform,grafana,kafka,redis,rabbitmq,spring,tailwind,ts" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=c,cs,cpp,html,css,fastapi,flask,java,js,latex,lua,md,maven,mysql,nextjs,postgres,py" />
-  <br>
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,discord,bots,figma,spotify,instagram" />
-</p>
-
-<hr>
-
-## Socials
-
-<br>
-
-  <p align="left"> <a href="https://discord.com/users/duartersantos" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /> </picture> </a> <a href="https://www.github.com/Duarters07" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /> </picture> </a> <a href="http://www.instagram.com/duarte_r_santos" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /> </picture> </a></p>
-  </a>
-
-<hr>
-
-## Stats
-
-<br>
-
-<div align=center>
-  <img width=390 src="https://github-readme-stats-fast.vercel.app/api?username=duarters07&&theme=transparent&count_private=true&show_icons=true&rank_icon=github&locale=en" />
-  <img width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=duarters07&theme=transparent&count_private=true&border_radius=10&locale=en" />
 </div>
 
-<hr>
+```console
+duarte@ua:~$ cat about.txt
+  role      MSc student, Informatics Engineering @ Universidade de Aveiro
+  focus     cybersecurity — security monitoring, SIEM, log pipelines, network security
+  building  hands-on labs that other students actually use in class
+  daily     Arch Linux · Neovim · Docker · too much coffee ☕
+  open to   internships / summer programmes in SOC, blue team or security engineering
+```
 
+```console
+duarte@ua:~$ ls ~/projects --sort=impact
+```
+
+<p align="center">
+  <a href="https://github.com/Duarters07/SIEMgen-class"><img src="assets/siemgen-class.svg" width="49%" alt="SIEMgen-class" /></a>
+  <a href="https://github.com/Duarters07/MinimalSIEM"><img src="assets/minimalsiem.svg" width="49%" alt="MinimalSIEM" /></a>
+  <a href="https://github.com/Duarters07/stack-enterprise-network-lab"><img src="assets/network-lab.svg" width="49%" alt="Enterprise network lab" /></a>
+  <a href="https://github.com/Duarters07/fpga-thermostat"><img src="assets/fpga-thermostat.svg" width="49%" alt="FPGA thermostat" /></a>
+</p>
+
+```console
+duarte@ua:~$ which --all tools
+```
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=kali,linux,arch,docker,elasticsearch,grafana,ansible,bash&perline=8" /><br/>
+  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,cs,js,ts,git,githubactions,neovim,latex&perline=11" />
+</p>
+
+<!-- Descomenta quando tiveres perfil em plataformas de CTF/treino:
+```console
+duarte@ua:~$ cat ~/.ctf/ranks
+```
+<p align="center">
+  <a href="https://tryhackme.com/p/O-TEU-USER"><img src="https://tryhackme-badges.s3.amazonaws.com/O-TEU-USER.png" /></a>
+</p>
+-->
+
+```console
+duarte@ua:~$ git log --all --since="1 year ago" | render --3d
+```
+
+<p align="center">
+  <img src="profile-3d-contrib/profile-night-green.svg" alt="3D contribution graph" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dist/snake-dark.svg" />
+    <img src="dist/snake-light.svg" alt="snake eating my contribution graph" />
+  </picture>
+</p>
+
+<div align="center"><sub>Always learning, always logging. <code>tail -f /var/log/duarte</code></sub></div>
