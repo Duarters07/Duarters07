@@ -67,11 +67,4 @@ duarte@santos:~$ neofetch --github
   <img src="assets/stats.svg" width="98%" alt="GitHub stats" />
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dist/snake-dark.svg" />
-    <img src="dist/snake-light.svg" alt="snake eating my contribution graph" />
-  </picture>
-</p>
-
 <div align="center"><sub>Always learning, always logging. <code>tail -f /var/log/duarte</code></sub></div>
