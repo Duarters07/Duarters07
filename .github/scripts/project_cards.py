@@ -1,71 +1,81 @@
-"""Generate terminal-window SVG cards for the GitHub profile README."""
+"""Draw the project cards from cards.toml and update the grid in README.md.
+
+Run locally: `python3 .github/scripts/project_cards.py`.
+Missing fields in cards.toml are filled from the GitHub API (GITHUB_TOKEN is
+optional locally, but unauthenticated requests are rate limited).
+"""
+import json
 import os
+import re
 import sys
+import textwrap
+import tomllib
+import urllib.error
+import urllib.request
 from html import escape
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "assets"
+OWNER = os.environ.get("USERNAME", "Duarters07")
+TOKEN = os.environ.get("GITHUB_TOKEN")
+CONFIG, README, ASSETS = "cards.toml", "README.md", "assets/projects"
+START, END = "<!-- projects:start -->", "<!-- projects:end -->"
 
-CARDS = [
-    {
-        "file": "microrato24.svg",
-        "path": "~/projects/MicroRato24",
-        "accent": "#ff7b72",
-        "cmd": "pcompile main.c map.c mr32.c",
-        "headline": "A maze-solving robot that learns.",
-        "desc": [
-            "PIC32 line-follower for UA's MicroRato:",
-            "maps the maze on the first run, prunes",
-            "dead ends, then races the shortest path.",
-        ],
-        "status": "path LBR → B | shortest route locked",
-        "tags": ["c", "pic32", "robotics"],
-    },
-    {
-        "file": "minimalsiem.svg",
-        "path": "~/projects/MinimalSIEM",
-        "accent": "#58a6ff",
-        "cmd": "docker compose up -d",
-        "headline": "A SIEM small enough to run in class.",
-        "desc": [
-            "TLS-secured Elastic stack in one compose:",
-            "Filebeat → Elasticsearch → Kibana.",
-            "Plug SIEMgen in and start hunting.",
-        ],
-        "status": "es01 healthy | kibana healthy",
-        "tags": ["elasticsearch", "kibana", "filebeat"],
-    },
-    {
-        "file": "network-lab.svg",
-        "path": "~/projects/enterprise-network-lab",
-        "accent": "#f0883e",
-        "cmd": "show ipv6 route",
-        "headline": "A whole company network, emulated.",
-        "desc": [
-            "Multi-site GNS3 lab: VLSM, dual-stack",
-            "IPv4/IPv6, NAT/PAT, DHCP, BIND9 DNS,",
-            "Apache vhosts and a threaded TCP service.",
-        ],
-        "status": "198.155.198.0/24 | dual-stack up",
-        "tags": ["gns3", "cisco-ios", "bind9", "python"],
-    },
-    {
-        "file": "dotfiles.svg",
-        "path": "~/.dotfiles",
-        "accent": "#e3b341",
-        "cmd": "nvim ~/.dotfiles",
-        "headline": "Where I actually live: the terminal.",
-        "desc": [
-            "My Arch Linux setup, keyboard-driven:",
-            "Neovim with LSP and Treesitter, Zsh,",
-            "Tmux, Zellij and WezTerm.",
-        ],
-        "status": "zoxide | atuin | lsd | loaded",
-        "tags": ["shell", "neovim", "arch"],
-    },
-]
-
+PALETTE = ["#ff7b72", "#58a6ff", "#f0883e", "#e3b341", "#39d353", "#bc8cff", "#56d4dd"]
 W, H = 440, 220
 FONT = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
+# roughly how many monospace characters fit on one line of the card
+MAX_LINE, MAX_HEADLINE, MAX_STATUS = 46, 44, 40
+
+
+def warn(msg):
+    # shows up as an annotation on the workflow run
+    print(f"::warning::{msg}" if os.environ.get("GITHUB_ACTIONS") else f"warning: {msg}")
+
+
+def fit(text, limit, what):
+    if len(text) <= limit:
+        return text
+    warn(f"{what} is {len(text)} characters, cut to {limit}: {text!r}")
+    return text[: limit - 1] + "…"
+
+
+def github(repo):
+    req = urllib.request.Request(f"https://api.github.com/repos/{repo}")
+    if TOKEN:
+        req.add_header("Authorization", f"bearer {TOKEN}")
+    try:
+        with urllib.request.urlopen(req) as r:
+            return json.load(r)
+    except urllib.error.URLError as e:
+        warn(f"could not fetch {repo} from GitHub ({e}), using cards.toml only")
+        return {}
+
+
+def resolve(p, i):
+    full = p["repo"] if "/" in p["repo"] else f"{OWNER}/{p['repo']}"
+    name = full.split("/")[1]
+    gh = github(full)
+    status = p.get("status") or " | ".join(
+        x for x in (f"★ {gh.get('stargazers_count', 0)}", gh.get("language"),
+                    f"pushed {gh['pushed_at'][:10]}" if gh.get("pushed_at") else None) if x
+    )
+    desc = p.get("description") or gh.get("description") or ""
+    lines = textwrap.wrap(desc, MAX_LINE)
+    if len(lines) > 3:
+        warn(f"{name}: description is longer than 3 lines, the rest is cut")
+        lines = lines[:2] + [fit(" ".join(lines[2:]), MAX_LINE, f"{name} description")]
+    tags = p.get("tags") or gh.get("topics") or [t for t in [gh.get("language")] if t]
+    return {
+        "slug": re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"),
+        "url": gh.get("html_url") or f"https://github.com/{full}",
+        "path": f"~/projects/{name}",
+        "accent": p.get("accent") or PALETTE[i % len(PALETTE)],
+        "cmd": fit(p.get("cmd") or f"cd ~/projects/{name}", MAX_LINE - 17, f"{name} cmd"),
+        "headline": fit(p.get("headline") or name, MAX_HEADLINE, f"{name} headline"),
+        "desc": lines,
+        "status": fit(status, MAX_STATUS, f"{name} status"),
+        "tags": [t.lower() for t in tags],
+        "name": name,
+    }
 
 
 def card(c):
@@ -90,10 +100,13 @@ def card(c):
     tags, x = [], 20
     for t in c["tags"]:
         w = len(t) * 6.7 + 16
+        if x + w > W - 20:
+            warn(f"{c['name']}: tag {t!r} does not fit and was left out")
+            break
         tags.append(
             f'<g class="r" style="animation-delay:{delay:.1f}s">'
             f'<rect x="{x}" y="190" width="{w:.0f}" height="18" rx="9" class="tag"/>'
-            f'<text x="{x + w / 2:.1f}" y="203" class="tt" text-anchor="middle">{t}</text></g>'
+            f'<text x="{x + w / 2:.1f}" y="203" class="tt" text-anchor="middle">{escape(t)}</text></g>'
         )
         x += w + 8
 
@@ -123,8 +136,35 @@ def card(c):
 '''
 
 
-os.makedirs(OUT, exist_ok=True)
-for c in CARDS:
-    with open(os.path.join(OUT, c["file"]), "w") as f:
-        f.write(card(c))
-    print("wrote", c["file"])
+def main():
+    with open(CONFIG, "rb") as f:
+        projects = tomllib.load(f).get("project", [])
+    cards = [resolve(p, i) for i, p in enumerate(projects)]
+
+    # start clean so removed projects do not leave stale SVGs behind
+    os.makedirs(ASSETS, exist_ok=True)
+    for old in os.listdir(ASSETS):
+        if old.endswith(".svg"):
+            os.remove(os.path.join(ASSETS, old))
+    for c in cards:
+        with open(os.path.join(ASSETS, f"{c['slug']}.svg"), "w") as f:
+            f.write(card(c))
+        print("wrote", f"{ASSETS}/{c['slug']}.svg")
+
+    grid = "\n".join(
+        f'  <a href="{c["url"]}"><img src="{ASSETS}/{c["slug"]}.svg" width="49%" alt="{escape(c["name"])}" /></a>'
+        for c in cards
+    )
+    with open(README) as f:
+        readme = f.read()
+    if START not in readme or END not in readme:
+        sys.exit(f"README.md needs {START} and {END} around the project grid")
+    block = f'{START}\n<p align="center">\n{grid}\n</p>\n{END}'
+    readme = re.sub(re.escape(START) + ".*?" + re.escape(END), lambda _: block, readme, flags=re.S)
+    with open(README, "w") as f:
+        f.write(readme)
+    print(f"updated {README} with {len(cards)} cards")
+
+
+if __name__ == "__main__":
+    main()

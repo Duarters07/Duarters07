@@ -1,0 +1,53 @@
+# Project cards shown on the profile README.
+#
+# Add, remove or reorder [[project]] blocks and push: the "Profile stats" Action
+# redraws the cards and the grid in README.md for you. Only `repo` is required;
+# anything you leave out is filled in from GitHub:
+#
+#   repo         repo name, or "owner/repo" for repos in an organisation
+#   headline     bold first line              (default: the repo name)
+#   description  a sentence or two, wrapped to 3 lines for you
+#                                             (default: the repo's GitHub description)
+#   cmd          command after the prompt     (default: cd ~/projects/<repo>)
+#   status       text after [  OK  ]          (default: live ★ stars | last push)
+#   tags         small pills at the bottom    (default: repo topics, or its language)
+#   accent       card colour, any hex code    (default: picked from a palette)
+#
+# Keep lines short: about 45 characters fit on a card. The Action prints a
+# warning in its log when something is cut.
+
+[[project]]
+repo = "MicroRato24"
+accent = "#ff7b72"
+cmd = "pcompile main.c map.c mr32.c"
+headline = "A maze-solving robot that learns."
+description = "PIC32 line-follower for UA's MicroRato: maps the maze on the first run, prunes dead ends, then races the shortest path."
+status = "path LBR → B | shortest route locked"
+tags = ["c", "pic32", "robotics"]
+
+[[project]]
+repo = "MinimalSIEM"
+accent = "#58a6ff"
+cmd = "docker compose up -d"
+headline = "A SIEM small enough to run in class."
+description = "TLS-secured Elastic stack in one compose: Filebeat → Elasticsearch → Kibana. Plug SIEMgen in and start hunting."
+status = "es01 healthy | kibana healthy"
+tags = ["elasticsearch", "kibana", "filebeat"]
+
+[[project]]
+repo = "stack-enterprise-network-lab"
+accent = "#f0883e"
+cmd = "show ipv6 route"
+headline = "A whole company network, emulated."
+description = "Multi-site GNS3 lab: VLSM, dual-stack IPv4/IPv6, NAT/PAT, DHCP, BIND9 DNS, Apache vhosts and a threaded TCP service."
+status = "198.155.198.0/24 | dual-stack up"
+tags = ["gns3", "cisco-ios", "bind9", "python"]
+
+[[project]]
+repo = ".dotfiles"
+accent = "#e3b341"
+cmd = "nvim ~/.dotfiles"
+headline = "Where I actually live: the terminal."
+description = "My Arch Linux setup, keyboard-driven: Neovim with LSP and Treesitter, Zsh, Tmux, Zellij and WezTerm."
+status = "zoxide | atuin | lsd | loaded"
+tags = ["shell", "neovim", "arch"]

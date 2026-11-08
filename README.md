@@ -32,12 +32,14 @@ duarte@santos:~$ cat about.txt
 duarte@santos:~$ ls ~/projects --sort=impact
 ```
 
+<!-- projects:start -->
 <p align="center">
-  <a href="https://github.com/Duarters07/MicroRato24"><img src="assets/microrato24.svg" width="49%" alt="MicroRato24" /></a>
-  <a href="https://github.com/Duarters07/MinimalSIEM"><img src="assets/minimalsiem.svg" width="49%" alt="MinimalSIEM" /></a>
-  <a href="https://github.com/Duarters07/stack-enterprise-network-lab"><img src="assets/network-lab.svg" width="49%" alt="Enterprise network lab" /></a>
-  <a href="https://github.com/Duarters07/.dotfiles"><img src="assets/dotfiles.svg" width="49%" alt=".dotfiles" /></a>
+  <a href="https://github.com/Duarters07/MicroRato24"><img src="assets/projects/microrato24.svg" width="49%" alt="MicroRato24" /></a>
+  <a href="https://github.com/Duarters07/MinimalSIEM"><img src="assets/projects/minimalsiem.svg" width="49%" alt="MinimalSIEM" /></a>
+  <a href="https://github.com/Duarters07/stack-enterprise-network-lab"><img src="assets/projects/stack-enterprise-network-lab.svg" width="49%" alt="stack-enterprise-network-lab" /></a>
+  <a href="https://github.com/Duarters07/.dotfiles"><img src="assets/projects/dotfiles.svg" width="49%" alt=".dotfiles" /></a>
 </p>
+<!-- projects:end -->
 
 ```console
 duarte@santos:~$ ls -l ~/degrees
@@ -71,7 +73,11 @@ duarte@santos:~$ neofetch --github
 ```
 
 <p align="center">
-  <img src="assets/stats.svg" width="98%" alt="GitHub stats" />
+  <img src="https://streak-stats.demolab.com?user=Duarters07&theme=github-dark-blue&background=0d1117&border=30363d&ring=39d353&fire=39d353&currStreakLabel=39d353&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&hide_border=false&border_radius=10" width="98%" alt="GitHub streak" />
+</p>
+<p align="center">
+  <img src="https://github-stats-extended.vercel.app/api?username=Duarters07&show_icons=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=39d353&icon_color=39d353&text_color=c9d1d9&border_color=30363d&border_radius=10" height="165" alt="GitHub stats" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Duarters07&layout=compact&bg_color=0d1117&title_color=39d353&text_color=c9d1d9&border_color=30363d&border_radius=10" height="165" alt="Top languages" />
 </p>
 
 <div align="center"><sub>Always learning, always logging. <code>tail -f /var/log/duarte</code></sub></div>
