@@ -73,11 +73,11 @@ duarte@santos:~$ neofetch --github
 ```
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Duarters07&theme=github-dark-blue&background=0d1117&border=30363d&ring=39d353&fire=39d353&currStreakLabel=39d353&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&hide_border=false&border_radius=10" width="98%" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com?user=Duarters07&card_width=495&card_height=195&background=0d1117&border=30363d&ring=39d353&fire=39d353&currStreakLabel=39d353&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&border_radius=10" width="49%" alt="GitHub streak" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Duarters07&show_icons=true&include_all_commits=true&count_private=true&card_width=495&bg_color=0d1117&title_color=39d353&icon_color=39d353&text_color=c9d1d9&border_color=30363d&border_radius=10" width="49%" alt="GitHub stats" />
 </p>
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=Duarters07&show_icons=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=39d353&icon_color=39d353&text_color=c9d1d9&border_color=30363d&border_radius=10" height="165" alt="GitHub stats" />
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Duarters07&layout=compact&bg_color=0d1117&title_color=39d353&text_color=c9d1d9&border_color=30363d&border_radius=10" height="165" alt="Top languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Duarters07&layout=compact&langs_count=6&card_width=495&bg_color=0d1117&title_color=39d353&icon_color=39d353&text_color=c9d1d9&border_color=30363d&border_radius=10" width="49%" alt="Top languages" />
 </p>
 
 <div align="center"><sub>Always learning, always logging. <code>tail -f /var/log/duarte</code></sub></div>
